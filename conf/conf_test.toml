@@ -1,0 +1,21 @@
+runmodel="test"
+
+apiVersion = "v1"
+port = "8080"
+
+[log]
+logPath = "/Users/crazywolf/tmp/log"
+logFileName = "application.log"
+printConsole = true
+maxNumber = 10
+maxSize = 2
+# 1:debug
+level = 1
+
+[database]
+db_host = "localhost"
+db_port = 3306
+db_user = "echodemo"
+db_pass = "echodemo"
+db_name = "echodemo"
+db_type = "mysql"

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+<body>
+    <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">添加用户</h3>
+            </div>
+            <div class="panel-body">
+                <form action="/v1/user/InserUser">
+                    <div class="form-group">
+                        <label for="userName">userName</label>
+                        <input type="text" class="form-control" id="userName" name="userName" placeholder="userName">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">account</label>
+                        <input type="text" class="form-control" id="account" name="account" placeholder="account">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNum">phoneNum</label>
+                        <input type="text" class="form-control" id="phoneNum" name="phoneNum" placeholder="phoneNum">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">修改用户密码</h3>
+            </div>
+            <div class="panel-body">
+                <form action="/v1/user/UpdatePassword">
+                
+                    <div class="form-group">
+                        <label for="userName">account</label>
+                        <input type="text" class="form-control" id="account" name="account" placeholder="account">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">查询用户</h3>
+            </div>
+            <div class="panel-body">
+                <form action="/v1/user/SelectUser">
+                
+                    <div class="form-group">
+                        <label for="userName">account</label>
+                        <input type="text" class="form-control" id="account" name="account" placeholder="account">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">删除用户</h3>
+            </div>
+            <div class="panel-body">
+                <form action="/v1/user/DeleteUser">
+                
+                    <div class="form-group">
+                        <label for="userName">account</label>
+                        <input type="text" class="form-control" id="account" name="account" placeholder="account">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">求打赏</h3>
+        </div>
+        <div class="panel-body">
+    <div class="col-md-3"></div>
+    <div class="col-md-3"><img width="250px" src="zhifubao.jpeg"></div>
+    <div class="col-md-3"><img width="250px" src="weixin.jpeg"></div>
+</div>
+    </div>
+
+</body>
+
+</html>
